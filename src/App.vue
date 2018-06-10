@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Header />
+    <Editor />
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
+import Editor from './components/Editor'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Editor
   }
 }
 </script>
