@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <Header />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Header from './components/Header'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import 'static/css/sanitize';
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+  #app {
+    display: grid;
+
+    height: 100%;
+    margin: 0 auto;
+
+    grid-template-areas: 'header   header'
+    'editor  preview';
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px 1fr;
+  }
 </style>
