@@ -2,18 +2,21 @@
   <div id="app">
     <Header />
     <Editor />
+    <Preview />
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
 import Editor from './components/Editor'
+import Preview from './components/Preview'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Editor
+    Editor,
+    Preview
   }
 }
 </script>
