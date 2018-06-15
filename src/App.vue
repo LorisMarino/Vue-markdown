@@ -23,12 +23,24 @@ export default {
 
 <style lang="scss">
   @import 'static/css/sanitize';
+  @import 'src/assets/scss/utils/colors';
   html,
   body {
     height: 100%;
   }
   body {
     font-family: 'Lato', sans-serif;
+    font-weight: 300;
+
+    background-color: $twilight-blue;
+    a {
+      text-decoration: none;
+
+      color: $tana;
+      &:hover {
+        color: $pewter;
+      }
+    }
   }
   #app {
     display: grid;

@@ -1,3 +1,8 @@
+@import 'src/assets/scss/utils/colors';
 .preview {
+  padding-left: 20px;
+
+  border-left: 1px solid rgba($pewter, 0.7);
+
   grid-area: preview;
 }
